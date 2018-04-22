@@ -1,12 +1,13 @@
 function calculate() {
     var height = document.getElementById("height").value;
     // heightt(height);
+	console.log(height);
 	var weight = document.getElementById("weight").value;
     // weightt(weight);
 
 	var x = height;
 	var y = weight;
-	console.log(x);
+	console.log("Height should be equal to x: " + x);
 	console.log(y);
 
     if(x <= 0 || y <= 0){
@@ -16,6 +17,8 @@ function calculate() {
 
 	x /= 100;
 	var bmi = parseFloat(y) / ( parseFloat(x) * parseFloat(x));
+	    console.log("Bmi result displayed in full range: " + bmi);
+	    console.log("Bmi result rounded to two digits after decimal dot" + bmi.toFixed(2));
     // storeBmi(bmi);
 
 	document.getElementById("ybmi").innerHTML = bmi.toFixed(2);
