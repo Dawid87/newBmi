@@ -20,8 +20,18 @@ function calculate() {
 
 	document.getElementById("ybmi").innerHTML = bmi.toFixed(2);
 
-	 //var age = document.getElementById("age")
-	// var age_str = age.toString();
+	if(bmi <= 18.21){
+	    	var bmiRange = bmi + (bmi / 100) / 45;
+	document.getElementById("myRange").value = bmiRange.toFixed(2);
+	}
+	else if(bmi <= 19.75){
+	    	var bmiRange = bmi + (bmi / 100) * 25;
+	document.getElementById("myRange").value = bmiRange.toFixed(2);
+	}
+	else {
+	    	var bmiRange = bmi + (bmi / 100) * 45;
+	document.getElementById("myRange").value = bmiRange.toFixed(2);
+	}
  
 	if(bmi < 15)
 		bmi_catt = "Very severely underweight";
