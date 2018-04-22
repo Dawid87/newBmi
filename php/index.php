@@ -54,7 +54,19 @@ include("auth.php");
 
 	<main>
 		<section>
-			
+			 <div class="slidecontainer">
+                		<input type="range" min="10" max="50" value="35" class="slider" id="myRange">
+        		</div>
+        
+        
+        <!--<img id="warning" src="/bmi/img/warning.png" style="width: 90px; height: 90px; position:absolute;top:70px;left:80%;">-->
+        		<aside>
+			    <h2>Diagnosis</h2>
+			    <p>Body mass index (BMI) is a simple way offinding out whether a person is healthy weight for their weight</p>
+			    <p>The healthy BMI for adult person is between 18.5 to 24.9, further person with BMI between 25 and 29.9 is considered as overweigh. BMI over 30 is considered as obese.</p>
+			    <p>For more information please visit <a href="https://www.nhs.uk/conditions/obesity/" target="_blank">NHS</a></p>
+		    	
+			</aside>
 			
 		</section>
 		
